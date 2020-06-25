@@ -4,3 +4,10 @@
  * Below are some examples of what you can do. Uncomment them to try them out!
  */
 
+import { schema } from 'nexus'
+import { db } from './db'
+schema.addToContext(() => {
+    return {
+        db,
+    }
+})
